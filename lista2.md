@@ -1,11 +1,11 @@
 # PPGBIOINFO – UTFPR Campus Cornélio Procópio
 ## **Disciplina:** Programação para Bioinformática I
-## **Docente:** Prof. Dra. Marcella Scoczynski Ribeiro Martins
+## **Docente:** Marcella Scoczynski Ribeiro Martins
 ## **Discente:** Madson A. de Luna Aragão
 
 ---
 
-### **LISTA AVALIATIVA**
+### **Lista 2 (7 pts)**
 
 ---
 
