@@ -102,13 +102,13 @@ else:
 ```
 
 #### **Questão 2**
-Em um experimento serão utilizados dois organismos, denominados org1 e org2, respectivamente. Fazer um programa em Python que:
+*Em um experimento serão utilizados dois organismos, denominados org1 e org2, respectivamente. Fazer um programa em Python que:
 a. Leia ID (número de identificação) do organismo até que o usuário digite zero (0).
 b. Se for org1: i. Se for filhote: 1. Leia peso 2. Leia altura ii. Se for adulto: 1. Se for macho: a. Leia tipo sanguíneo (A ou B) 2. Se for fêmea a. Leia tipo sanguíneo (A o B) b. Leia número de ovos que botou (valor inteiro)
 c. Se for org2: i. Leia número de folhas ii. Leia total de frutos
-d. Ao final mostre: i. Número de indivíduos do org1 ii. Percentual de filhotes do org1 iii. Total de indivíduos do tipo sanguíneo A iv. Proporção de fêmeas com tipo sanguíneo B em relação ao total de indivíduos (machos e fêmeas) v. Média do número de ovos das fêmeas do tipo sanguíneo A vi. Número de indivíduos do org2 vii. ID do indivíduo com maior número de folhas do org2 viii. Média de frutos do org2
+d. Ao final mostre: i. Número de indivíduos do org1 ii. Percentual de filhotes do org1 iii. Total de indivíduos do tipo sanguíneo A iv. Proporção de fêmeas com tipo sanguíneo B em relação ao total de indivíduos (machos e fêmeas) v. Média do número de ovos das fêmeas do tipo sanguíneo A vi. Número de indivíduos do org2 vii. ID do indivíduo com maior número de folhas do org2 viii. Média de frutos do org2*
 
-Resolução:
+**Resolução:**
 ```python
 # Inicialização de todas as variáveis que servirão como contadores e acumuladores para as estatísticas.
 # Variáveis para o Organismo 1
@@ -194,9 +194,9 @@ print("\n" + "="*30)
 ```
 
 #### **Questão 3**
-Escreva um programa em Python para administrar a votação do líder de turma de uma faculdade. Nessa votação, qualquer aluno da turma pode receber votos (ou seja, caso a turma seja composta de 30 alunos, os 30 alunos se tornam candidatos e podem ser votados). O seu programa deve receber os votos dos eleitores com base no nome do aluno e deve finalizar a eleição quando a palavra "fim" for digitada (em outras palavras, você também não sabe quantas pessoas irão votar). Ao finalizar a eleição, o seu programa deve imprimir os nomes dos candidatos que receberam votos e suas respectivas quantidade. O seu programa deve também imprimir o nome do candidato vencedor. OBS: para resolver essa questão, você deve utilizar dicionário de dados.
+*Escreva um programa em Python para administrar a votação do líder de turma de uma faculdade. Nessa votação, qualquer aluno da turma pode receber votos (ou seja, caso a turma seja composta de 30 alunos, os 30 alunos se tornam candidatos e podem ser votados). O seu programa deve receber os votos dos eleitores com base no nome do aluno e deve finalizar a eleição quando a palavra "fim" for digitada (em outras palavras, você também não sabe quantas pessoas irão votar). Ao finalizar a eleição, o seu programa deve imprimir os nomes dos candidatos que receberam votos e suas respectivas quantidade. O seu programa deve também imprimir o nome do candidato vencedor. OBS: para resolver essa questão, você deve utilizar dicionário de dados.*
 
-Resolução:
+**Resolução:**
 ```python
 # Inicializa um dicionário vazio para funcionar como a urna.
 # A chave será o nome do candidato e o valor será a sua contagem de votos.
@@ -243,9 +243,9 @@ else:
 ```
 
 #### **Questão 4**
-Escreva um programa que recebe como entrada um conjunto de sequências de DNA como entrada (nome e sequência). O seu programa deve receber sequências enquanto o nome da sequência informada não for fim. Logo após, o seu programa deve calcular e imprimir o tamanho médio das sequências e imprimir quais sequências (nome e sequências) que tem tamanho maiores ou iguais à média. OBS: você deve utilizar dicionário de dados para resolver essa questão.
+*Escreva um programa que recebe como entrada um conjunto de sequências de DNA como entrada (nome e sequência). O seu programa deve receber sequências enquanto o nome da sequência informada não for fim. Logo após, o seu programa deve calcular e imprimir o tamanho médio das sequências e imprimir quais sequências (nome e sequências) que tem tamanho maiores ou iguais à média. OBS: você deve utilizar dicionário de dados para resolver essa questão.*
 
-Resolução:
+**Resolução:**
 ```python
 # Inicializa um dicionário para armazenar as sequências.
 # A chave será o nome da sequência e o valor será a própria sequência de DNA.
