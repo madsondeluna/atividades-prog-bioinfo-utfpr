@@ -37,12 +37,14 @@ if media >= 6.0:
 else:
     # Caso contrário (se a média for menor que 6.0), o aluno está reprovado.
     print(f"Sua média é {media:.2f}. Resultado: REPROVADO!")
+```
 
 Questão 2
 Escreva um algoritmo que recebe como entrada um caractere que representa um nucleotídeo (A, G, C, T) e retorna qual é o seu complementar. Caso o usuário informe um caractere que não é um nucleotídeo, o seu algoritmo deve retornar a mensagem: "Nucleotídeo inválido!"
 
 Resolução:
 
+```python
 # Solicita o nucleotídeo ao usuário. O método .upper() converte a entrada para maiúscula.
 nucleotideo = input("Digite o caractere do nucleotídeo (A, C, G, T): ").upper()
 
@@ -62,12 +64,14 @@ elif nucleotideo == 'G':
 # Se a entrada não for nenhuma das opções acima, é inválida.
 else:
     print("Nucleotídeo inválido!")
+```
 
 Questão 3
 Escreva um algoritmo que permite ao usuário executar ações a partir de dois números informados por ele. O seu algoritmo deve solicitar inicialmente ao usuário informe os dois números e depois exibir o seguinte menu em tela: 1- Soma de 2 números. 2- Diferença entre 2 números (maior pelo menor). 3- Produto entre 2 números. 4- Divisão entre 2 números (o denominador não pode ser zero). O seu programa deve retornar o resultado de acordo com a opção escolhida pelo usuário, obedecendo as restrições existentes em algumas das opções (caso sejam escolhidas).
 
 Resolução:
 
+```python
 # Solicita dois números e os converte para float para aceitar decimais.
 print("Calculadora Simples")
 num1 = float(input("Digite o primeiro número: "))
@@ -110,12 +114,13 @@ elif opcao == 4:
 else:
     # Se a opção não for nenhuma das anteriores, é inválida.
     print("Opção inválida.")
+```
 
 Questão 4
 Escrever um algoritmo que lê o sexo ("m" ou "M" ou "f" ou "F") e a idade de uma pessoa e que escreve o valor da entrada a ser pago, de acordo com a seguinte regra: a) Feminino ou masculino, com menos de 10 anos ou mais de 65, valor = R$ 0,50; b) Feminino ou masculino, com idade entre 10 e 17, valor = R$ 4,28; c) Feminino, com idade entre 18 e 65, valor = R$ 5,50; d) Masculino, com idade entre 18 e 65, valor = R$ 8,25.
 
 Resolução:
-
+```python
 # Lê o sexo e converte para minúsculo para facilitar a comparação.
 sexo = input("Digite o sexo (M/F): ").lower()
 # Lê a idade e converte para número inteiro.
@@ -151,13 +156,14 @@ if valor_entrada != -1:
 else:
     # Informa ao usuário que a entrada de sexo foi inválida.
     print("Sexo inválido. Por favor, digite 'M' ou 'F'.")
+```
 
 Estruturas de Repetição (WHILE)
 Questão 5
 Um determinado material radioativo perde metade de sua massa a cada 50 segundos. Dada a massa inicial em gramas informada pelo usuário, fazer um programa que calcula o tempo necessário para que essa massa se torne menor que 0,5 grama. O programa deve escrever a massa inicial, a massa final e o tempo calculado em horas, minutos e segundos.
 
 Resolução:
-
+```python
 # Solicita ao usuário a massa inicial do material.
 massa_inicial = float(input("Digite a massa inicial do material (em gramas): "))
 
@@ -183,12 +189,13 @@ print("\n--- Relatório de Decaimento ---")
 print(f"Massa Inicial: {massa_inicial:.2f}g")
 print(f"Massa Final: {massa_atual:.4f}g")
 print(f"Tempo Decorrido: {horas}h {minutos}m {segundos}s")
+```
 
 Questão 6
 A série de Fibonacci é formada pela sequência: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ... Escreva um algoritmo que gere a série de FIBONACCI até o N-ésimo termo, sendo esse informado pelo usuário.
 
 Resolução:
-
+```python
 # Solicita ao usuário o número de termos da série a serem gerados.
 n = int(input("Quantos termos da série de Fibonacci você quer gerar? "))
 
@@ -216,12 +223,14 @@ while contador <= n:
 
 # Imprime uma linha em branco no final para melhor formatação.
 print()
+```
 
 Questão 7
 Faça um programa que receba um conjunto de valores inteiros e positivos e que calcule e mostre o maior e o menor valor do conjunto. Considere que: a) Para encerrar a entrada de dados, deve ser digitado o valor zero; b) Para valores negativos, deve ser enviada uma mensagem informando que esses números não serão considerados na análise.
 
 Resolução:
 
+```python
 # Inicializa as variáveis de maior e menor como 'None' (nulo).
 maior_valor = None
 menor_valor = None
@@ -261,12 +270,14 @@ if maior_valor is not None:
     print(f"Menor valor inserido: {menor_valor}")
 else:
     print("\nNenhum valor positivo foi inserido para análise.")
+```
 
 Questão 8
 Escreva um algoritmo que recebe uma sequência de DNA e que percorre essa sequência imprimindo, para cada posição, qual é o nome do nucleotídeo da posição. Por exemplo: dada a sequência AGGTC, o seu algoritmo deve imprimir a seguinte saída: 1- A: Adenina, 2- G: Guanina, 3- G: Guanina, 4- T: Timina, 5- C: Citosina. Caso a sequência possua algum caractere diferente dos descritos acima, o seu algoritmo deve escrever: "Nucleotídeo inválido!"
 
 Resolução:
 
+```python
 # Lê a sequência de DNA e converte para maiúsculas.
 sequencia_dna = input("Digite a sequência de DNA: ").upper()
 
@@ -302,12 +313,14 @@ while posicao < len(sequencia_dna):
 # Ao final, se a flag foi alterada, exibe a mensagem de erro geral.
 if not sequencia_valida:
     print("\nAnálise interrompida: Nucleotídeo inválido encontrado!")
+```
 
 Questão 9
 Escreva um algoritmo que recebe uma sequência e um caractere do usuário, calcula e imprime a porcentagem da sequência composta pelo caractere informado. Ex: dada a sequência ACTAGGTTAG e o caractere G, podemos dizer que 30% da sequência é composta pelo caractere G.
 
 Resolução:
 
+```python
 # Lê a sequência e o caractere, convertendo ambos para maiúsculas.
 sequencia = input("Digite a sequência: ").upper()
 caractere_alvo = input("Digite o caractere a ser contado: ").upper()
@@ -332,12 +345,14 @@ if tamanho_total > 0:
     print(f"\nO caractere '{caractere_alvo}' compõe {porcentagem:.2f}% da sequência.")
 else:
     print("\nA sequência está vazia. Não é possível calcular a porcentagem.")
+```
 
 Questão 10
 De acordo com a wikipedia, o conteúdo GC (ou conteúdo de guanina-citosina) de uma sequência é a porcentagem de bases nitrogenadas em uma molécula de DNA ou RNA que são guanina ou citosina. Dessa forma, escreva um algoritmo que calcula o conteúdo GC de uma sequência informada pelo usuário.
 
 Resolução:
 
+```python
 # Lê a sequência de DNA e a padroniza para maiúsculas.
 sequencia = input("Digite a sequência de DNA para cálculo do conteúdo GC: ").upper()
 
@@ -363,3 +378,4 @@ if tamanho_total > 0:
     print(f"\nO conteúdo GC da sequência é de {conteudo_gc:.2f}%.")
 else:
     print("\nA sequência está vazia. Não é possível calcular o conteúdo GC.")
+```
